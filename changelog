@@ -1,49 +1,77 @@
-###v0.1.5.0  changelog
-TehGimp  
+<div class="md"><p>KMP v0.1.5.0 is now available on SpacePort! Thanks to everyone on the KMP dev team and to all of our testers for helping to make this release a reality!</p>
 
-   * Added career-mode support  
-   * Added MySQL server database support (together w/ PhonicUK)  
-   * Added private-vessel hijacking prevention and preserved old behaviour as new "piracy" server mode option  
-   * Added sync-bailout for quitting game if initial universe sync fails  
-   * Added loaded vessel counter during universe syncing, and in-game syncing notifications  
-   * Added explanatory tooltips to sync buttons  
-   * Improved rendezvous smoothing behaviour & added a periodic orbit re-sync to ensure both players have a consistent game state  
-   * Fixed suborbital vessels could pass through celestial bodies and re-appear if you synced past the time of their collision  
-   * Fixed crewed vessels could fail to load on high-traffic servers  
-   * Fixed issues where your own vessel could appear as "occupied" until you reconnected to the server and some privacy-lock bugs  
-   * Fixed a bug where vessels could be loaded repeatedly in situations where they shouldn't be  
-   * Fixed some other orbital sync logic issues and improved rendezvous orbital sync performance  
-   * Fixed some docking bugs  
-   * Fixed some rarer universe sync bugs  
-   * Fixed various vessel loading bugs that could affect game performance  
-   * Fixed a very-rare server crash
+<p>Happy New Year!!</p>
 
-  
-godarklight  
+<hr>
 
-   * Added subassembly sharing  
-   * Improved netcode performance via message prioritization  
-   * Improved screenshot viewer UI
-   * Improved disconnection messaging  
-   * Improved log file naming conventions  
-   * Fixed various issues with server-side mod control  
-   * Fixed various minor connection bugs
+<p>Download links:</p>
 
-  
-PhonicUK  
+<h3><a href="http://kerbalspaceport.com/kmp-client/" class="imgScanned">KMP Client</a><span title="press 1 to open link" class="keyNavAnnotation">[1] </span></h3>
 
-   * Added MySQL server database support (together w/ TehGimp)  
-  
-ryannathans  
+<p><a href="http://kerbalspaceport.com/kmp-server/" class="imgScanned">KMP Server</a><span title="press 2 to open link" class="keyNavAnnotation">[2] </span></p>
 
-   * Added server-side mod control (together w/ godarklight)  
-   * Fixed various issues with server-side mod control  
-  
-ruarai  
+<hr>
 
-   * Added server command logging  
-   * Fixed server was exiting on a "/stop" command  
-  
-dazoe  
+<h3>Changelog</h3>
 
-   * UDP connection now listens on same IP and port as TCP  
+<h3>v0.1.5.0</h3>
+
+<p>TehGimp</p>
+
+<ul>
+<li><p>Added career-mode support</p></li>
+<li><p>Added MySQL server database support (together w/ PhonicUK)</p></li>
+<li><p>Added private-vessel hijacking prevention and preserved old behaviour as new "piracy" server mode option</p></li>
+<li><p>Added sync-bailout for quitting game if initial universe sync fails</p></li>
+<li><p>Added loaded vessel counter during universe syncing, and in-game syncing notifications</p></li>
+<li><p>Added explanatory tooltips to sync buttons</p></li>
+<li><p>Improved rendezvous smoothing behaviour &amp; added a periodic orbit re-sync to ensure both players have a consistent game state</p></li>
+<li><p>Fixed suborbital vessels could pass through celestial bodies and re-appear if you synced past the time of their collision</p></li>
+<li><p>Fixed crewed vessels could fail to load on high-traffic servers</p></li>
+<li><p>Fixed issues where your own vessel could appear as "occupied" until you reconnected to the server and some privacy-lock bugs</p></li>
+<li><p>Fixed a bug where vessels could be loaded repeatedly in situations where they shouldn't be</p></li>
+<li><p>Fixed some other orbital sync logic issues and improved rendezvous orbital sync performance</p></li>
+<li><p>Fixed some docking bugs</p></li>
+<li><p>Fixed some rarer universe sync bugs</p></li>
+<li><p>Fixed various vessel loading bugs that could affect game performance</p></li>
+<li><p>Fixed a very-rare server crash</p></li>
+</ul>
+
+<p>godarklight</p>
+
+<ul>
+<li><p>Added subassembly sharing</p></li>
+<li><p>Improved netcode performance via message prioritization</p></li>
+<li><p>Improved screenshot viewer UI</p></li>
+<li><p>Improved disconnection messaging</p></li>
+<li><p>Improved log file naming conventions</p></li>
+<li><p>Fixed various issues with server-side mod control</p></li>
+<li><p>Fixed various minor connection bugs</p></li>
+</ul>
+
+<p>PhonicUK</p>
+
+<ul>
+<li>Added MySQL server database support (together w/ TehGimp)</li>
+</ul>
+
+<p>ryannathans</p>
+
+<ul>
+<li><p>Added server-side mod control (together w/ godarklight)</p></li>
+<li><p>Fixed various issues with server-side mod control</p></li>
+</ul>
+
+<p>ruarai</p>
+
+<ul>
+<li><p>Added server command logging</p></li>
+<li><p>Fixed server was exiting on a "/stop" command</p></li>
+</ul>
+
+<p>dazoe</p>
+
+<ul>
+<li>UDP connection now listens on same IP and port as TCP</li>
+</ul>
+</div>
