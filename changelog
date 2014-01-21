@@ -1,49 +1,44 @@
-###v0.1.5.0  changelog
-TehGimp  
+###v0.1.5.1
+TehGimp
 
-   * Added career-mode support  
-   * Added MySQL server database support (together w/ PhonicUK)  
-   * Added private-vessel hijacking prevention and preserved old behaviour as new "piracy" server mode option  
-   * Added sync-bailout for quitting game if initial universe sync fails  
-   * Added loaded vessel counter during universe syncing, and in-game syncing notifications  
-   * Added explanatory tooltips to sync buttons  
-   * Improved rendezvous smoothing behaviour & added a periodic orbit re-sync to ensure both players have a consistent game state  
-   * Fixed suborbital vessels could pass through celestial bodies and re-appear if you synced past the time of their collision  
-   * Fixed crewed vessels could fail to load on high-traffic servers  
-   * Fixed issues where your own vessel could appear as "occupied" until you reconnected to the server and some privacy-lock bugs  
-   * Fixed a bug where vessels could be loaded repeatedly in situations where they shouldn't be  
-   * Fixed some other orbital sync logic issues and improved rendezvous orbital sync performance  
-   * Fixed some docking bugs  
-   * Fixed some rarer universe sync bugs  
-   * Fixed various vessel loading bugs that could affect game performance  
-   * Fixed a very-rare server crash
+ * Shrunk default safety-cylinder radius to 2000m
 
-  
-godarklight  
+ * Tweaked rendezvous smoothing behaviour for better in-game performance
 
-   * Added subassembly sharing  
-   * Improved netcode performance via message prioritization  
-   * Improved screenshot viewer UI
-   * Improved disconnection messaging  
-   * Improved log file naming conventions  
-   * Fixed various issues with server-side mod control  
-   * Fixed various minor connection bugs
+ * Optimized database performance during cleanup operations, which should address recent server slowdown/lag issues
 
-  
-PhonicUK  
+ * Optimized server object serialization to increase overall performance
 
-   * Added MySQL server database support (together w/ TehGimp)  
-  
-ryannathans  
+ * Fixed some bugs affecting the reliability of career-mode data (more fixes by trafalg & xterm91)
 
-   * Added server-side mod control (together w/ godarklight)  
-   * Fixed various issues with server-side mod control  
-  
-ruarai  
+ * Fixed possible NREs when changing part opacity affecting game performance
 
-   * Added server command logging  
-   * Fixed server was exiting on a "/stop" command  
-  
-dazoe  
+ * Fixed server crash in some situations where a client doesn't disconnect cleanly
 
-   * UDP connection now listens on same IP and port as TCP  
+ * Fixed EVAs near KSC being sent to the server even when in safety bubble
+
+godarklight
+
+ * Simplified KMP client<->plugin messaging
+
+Dazoe
+
+ * Added option for alternative GUI skin
+
+ * Ship control is now blocked while entering a chat message
+
+ * Updated compilation scrips
+
+ * Fixed server can crash with a poorly formed "/set" command
+
+Yilmas
+
+ * Added "/lockship" server admin command for manually changing vessel privacy
+
+trafalg
+
+ * Fixed bugs causing loss of science points and career progress
+
+xterm91
+
+ * Fixed bugs causing loss of science points and career progress
